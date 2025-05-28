@@ -1,6 +1,6 @@
 <?php
 // 1) Подключаем конфиг и автолоадеры
-require __DIR__ . 'public/app/config.php';
+require __DIR__ . '/app/config.php';
 require __DIR__ . 'src/Core/Database.php';
 require __DIR__ . 'src/Core/View.php';
 require __DIR__ . 'src/Core/RateLimiter.php';
