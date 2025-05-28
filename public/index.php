@@ -1,14 +1,16 @@
 <?php
 // 1) Подключаем конфиг и автолоадеры
 require __DIR__ . '/app/config.php';
-require __DIR__ . 'src/Core/Database.php';
-require __DIR__ . 'src/Core/View.php';
-require __DIR__ . 'src/Core/RateLimiter.php';
-require __DIR__ . 'src/Core/Logger.php';
-require __DIR__ . 'src/Model/User.php';
-require __DIR__ . 'src/Model/Product.php';
-require __DIR__ . 'src/Controller/AuthController.php';
-require __DIR__ . 'src/Controller/Admin/ProductController.php';
+require __DIR__ . '/../src/Core/Database.php';
+require __DIR__ . '/../src/Core/View.php';
+require __DIR__ . '/../src/Core/RateLimiter.php';
+require __DIR__ . '/../src/Core/Logger.php';
+
+require __DIR__ . '/../src/Model/User.php';
+require __DIR__ . '/../src/Model/Product.php';
+
+require __DIR__ . '/../src/Controller/AuthController.php';
+require __DIR__ . '/../src/Controller/Admin/ProductController.php';
 
 // 2) Запускаем сессию
 session_start();
