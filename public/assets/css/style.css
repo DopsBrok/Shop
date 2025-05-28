@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;  
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    position: relative;
+    top: 15px;
+}
+
+.header__logo {
+    position: relative;
+    left: 28%;
+    height: 20px;
+    width: 20px;
+}
+
+.btn-search{
+    background: none;
+    border: none;
+}
+
+.btn-cart{
+    background: none;
+    border: none;
+}
+
+.btn-account{
+    background: none;
+    border: none;
+}
+
+a {
+    text-decoration: none; 
+    color: #000000;
+}
+
+.btn-lang{
+    border-radius: 15px;
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgba(196, 196, 196, 0);
+}
+
+/* main */
+
+.div_Pro{
+  position: absolute;
+  width: 3008px;
+  height: 692px;
+  left: -554px;
+  top: 50px;
+  background-image: url(../Images/16Pro.jpeg);
+}
+
+.btn_16pro_Pay{
+  position: absolute;
+  width: 280px;
+  height: 55px;
+  left: 46%;
+  top: 190px;
+  display: flex;
+  gap: 15px;
+}
+
+.Pro_pay{
+  position: absolute;
+  left: 25px;
+  top: 5px;
+}
+
+.Pro_more{
+    position: absolute; 
+    left: 110px;
+    top: 5px;
+}
+
+/* iPhone 16 */
+
+.div_16{
+position: absolute;
+width: 959px;
+height: 532px;
+left: 0;
+right: 0;
+top: 753px;
+background-image: url(../Images/16.jpeg);
+}
+
+.h2_16{
+position: absolute;
+  width: 210px;
+  height: 60px;
+  left: 410px;
+  top: 50px;
+}
+
+.btn_16_Pay{
+position: relative;
+  width: 245px;
+  height: 50px;
+  left: 390px;
+  top: 120px;
+  gap: 15px;
+  display: flex;
+}
+
+/* Watch 10 */
+
+.div_watch10{
+  position: absolute;
+  width: 946px;
+  height: 532px;
+  left: 974px;
+  top: 753px;
+  background-image: url(../Images/Watch10.jpeg);
+  background-size: cover;
+}
+
+.h2_watch10{
+  position: absolute;
+  width: 210px;
+  height: 120px;
+  left: 370px;
+  top: 30px;
+  text-align: center;
+}
+
+.btn_watch10{
+  position: absolute;
+  width: 260px;
+  height: 50px;
+  left: 367px;
+  top: 160px;
+  display: flex;
+  gap: 15px;
+}
+
+/* watch */
+
+.div_watch{
+position: absolute;
+width: 959px;
+height: 579px;
+left: 0;
+right: 0;
+top: 1300px;
+
+background-image: url(../Images/Watch.jpeg);
+}
+
+.h2_watch{
+  position: absolute;
+  width: 173px;
+  height: 70px;
+  left: 379px;
+  top: 90px;
+  text-align: center;
+}
+
+.btn_watch{
+  position: absolute;
+  width: 240px;
+  height: 50px;
+  left: 355px;
+  top: 165px;
+  display: flex;
+  gap: 15px;
+}
+
+/* macbook */
+
+.div_macbook{
+  position: absolute;
+  width: 946px;
+  height: 580px;
+  left: 974px;
+  top: 1300px;
+  background-image: url(../Images/Macbook.jpeg);
+}
+
+.h2_macbook{
+  position: absolute;
+  width: 183px;
+  height: 65px;
+  left: 369px;
+  top: 70px;
+  text-align: center;
+}
+
+.btn_macbook{
+  position: absolute;
+  width: 269px;
+  height: 50px;
+  left: 350px;
+  top: 140px;
+  display: flex;
+  gap: 15px;
+}
+
+/* footer */
+
+footer{
+	position: absolute;
+	width: 1920px;
+	height: 449px;
+	top: 1895px;
+	background-color: #F5F5F7;
+}
+
+/* Контейнер колонок */
+.footer_auto {
+  display: flex;
+  justify-content: space-between; /* равные промежутки между колонками */
+  padding: 40px 266px;             /* отступы сверху/снизу и по бокам */
+  background-color: #F5F5F7;
+  text-align: center;
+}
+
+/* Одна колонка */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;               /* расстояние между ссылками */
+  min-width: 140px;       /* можно менять под макет */
+}
+
+/* Заголовок колонки */
+.footer-column h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Ссылки */
+.footer-column a {
+  font-size: 12px;
+  color: #1D1D1F;
+  text-decoration: none;
+}
+
+.footer-column a {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: rgb(0,113,227);       /* синий, как кнопки «Купить» */
+  transform: translateX(4px);  /* лёгкий сдвиг вправо */
+}
+
+/* Линия-разделитель */
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0,0,0,0.25);
+  margin: 0 auto;
+  position: relative;
+  top: 20%;
+}
+
+/* Копирайт */
+.footer-copy {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+
+  position: relative;
+  top: 23%;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(128,128,128,0.5); /* полупрозрачный серый */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  z-index: 499; /* чуть ниже, чем pop-up (500) */
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* === Поп-ап в hero === */
+.auth-popup {
+  position: fixed;                 
+  top: 50%;                        
+  left: 50%;                       
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  max-width: 360px;
+  width: calc(100% - 40px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  
+  /* анимация появления */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 500;                    /* выше overlay (499) */
+}
+
+/* когда класс .show добавлен через JS */
+.auth-popup.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Крестик закрытия */
+.popup-close {
+  position: absolute;
+  top: 10px; right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Формы: только одна активна */
+.auth-form {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+.auth-form.active-form {
+  display: flex;
+}
+
+.auth-form h2 {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.auth-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn {
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: rgb(0,113,227);
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+.btn.outline {
+  background: transparent;
+  color: rgb(0,113,227);
+  border: 1px solid rgb(0,113,227);
+  padding: 10px;
+}
+
+.switch-text {
+  font-size: 12px;
+  text-align: center;
+}
+.switch-text a {
+  color: rgb(0,113,227);
+  text-decoration: none;
+}
+
+.input-error {
+  border-color: #e74c3c !important;
+}
+
+/* Сообщение об ошибке */
+.validation-error {
+  font-size: 12px;
+  color: #e74c3c;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
